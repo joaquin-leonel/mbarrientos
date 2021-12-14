@@ -1,0 +1,541 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+
+/*colores
+#E65096
+ #9262A7
+ #fc8ec1
+*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+
+body{
+font-family: 'Raleway', sans-serif;
+  /* padding: 90px 20px 0; */
+  padding: 90px 0;
+  background:#ffd07e !important;
+}
+
+#header{
+  background-color: #9262A7;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top:0;
+  left:0;
+  z-index: 2;
+  }
+
+  .nav{
+    display: flex;
+    justify-content: space-between;
+
+    /* max-width: 992px;
+    margin: 0 auto; */
+  }
+
+  .nav-route{
+  color:black;
+  text-decoration: none;
+}
+
+.logo{
+
+  height: 75px;
+width: auto;
+font-weight: bold;
+padding: 1px 20px;
+line-height: 80px;
+padding-top: 5px;
+margin-top: .2rem;
+  /* padding-top:5px; */
+}
+
+.nav-menu{
+  display: flex;
+  margin-right: 40px;
+list-style: none; 
+
+}
+
+.nav-menu-item{
+  font-size: 16px;
+  margin: 0 5px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
+}
+.nav-menu-link{
+
+  padding: 6px 12px;
+  border-radius:3px;
+  font-weight:normal;
+  color:white;
+  font-family: 'Raleway', sans-serif;
+  transition: .3s;
+}
+
+ul li:nth-child(5){
+ color: #ccc;
+font-size: 2rem;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link-active{
+  /*font-weight:bolder;*/
+  color:#fc8ec1;
+ /* font-size: 1.3rem;*/
+  transition: .3s;
+  font-family: 'Raleway', sans-serif;
+}
+
+.nav-toggle{
+  color:black;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding:0 20px;
+  line-height: 60px;
+  display:none;
+}
+
+
+#footer{
+  background-color: #9262A7;
+  width: 100%;
+  height: auto;
+  position: relative;
+  bottom: -15vh;
+}
+
+.socialFooter{
+ padding-top: 5px;
+  font-size: 30px;
+  display: flex;
+  justify-content:center;
+}
+
+.footerInfo{
+  padding-top: 10px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.pFooter{
+  color: white;
+  font-size: 1rem;
+}
+
+i{
+  padding-left: 20px;
+  color:rgb(255, 255, 255);
+  transition: 0.3s;
+}i:hover{
+  color:#fc8ec1;
+  transition: 0.3s;
+}
+
+.w3-btn-floating{
+  padding-left: .5rem;
+  padding-right: .5rem;
+font-size: 2rem;
+  color:white ;
+}
+
+
+.headerDonar{
+  color: white;
+  background: #E65096;
+  width: 6rem;
+  height: 2rem;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bolder;
+  /*font-size: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;*/
+  
+  margin-left: 0rem;
+  margin-right: -2.5rem;
+  font-family: 'Raleway', sans-serif;
+  transition: .3s;
+}
+.headerDonar:hover{
+  background: #fc8ec1;
+  transition: .3s;
+}
+
+.copyContacto{
+  padding-top:3rem;
+}
+
+/*---------------------------- Index ----------------------*/
+.container-general{
+  margin: 3rem 10rem;
+}
+
+
+.titleMain{
+  margin-top: 1.4rem;
+  display:flex;
+  justify-content: center;
+}
+.positionCenter{
+  display: flex;
+  justify-content: center;
+}
+
+
+.donarTitle{
+
+  position:absolute;
+   left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  padding-top:2rem;
+  color:white;
+/*align-items:center;
+  justify-content: center;*/
+  font-weight: bold;
+  /*margin-left:10%;*/
+  font-size: 4rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+.donarButton{
+ font-weight: bolder;
+position: absolute;
+left: 0;
+right: 0;
+margin-left: auto;
+margin-right: auto;
+margin-top: 15%;
+color: white;
+background: #9262A7;
+width: 16rem;
+height: 4rem;
+border: none;
+text-align: center;
+text-decoration: none;
+cursor: pointer;
+font-size: 2.5rem;
+padding-left: 1rem;
+padding-right: 1rem;
+font-family: 'Raleway', sans-serif;
+}.donarButton:hover{
+  background: #E65096;
+  transition:.3s
+}
+
+.logoFooter{
+  margin-left:2rem;
+}
+
+/*----------------------------Noticias-----------------------------*/
+
+.hrNoticias{
+  margin: 0;
+  height: 10px !important;
+  opacity: unset;
+  background-color: hsla(0, 0%, 0%, 0.25);
+}
+.position-noticiaSecund{
+  display: flex;
+  justify-content: space-between;
+}
+.card{
+  position: initial !important;
+}
+
+.card-body{
+  margin-right: 5rem;
+margin-left: 5rem;
+}
+
+/*------------------------Nuestra Historia------------------------*/
+.banner{
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.096);
+  display: flex;
+  justify-content: center;
+}
+.titleHistoria{
+  font-size: 3rem;
+  margin: auto;
+}
+.historia{
+  margin-top: 20rem ;
+}
+.videoHistoria{
+  display: flex;
+  justify-content: center;
+}
+
+/*------------------------------Contacto---------------------------*/
+.m-contacto{
+  margin: 5rem 5rem !important;
+  padding-top: 1rem;
+}
+.logoRedes{
+  color: black;
+  font-size: 50px ;
+}
+.contacto{
+  position: absolute;
+  margin: -2.5rem 5rem;
+}
+.map{
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.redes{
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+.margen-contacto{
+  margin: 3rem 5rem !important
+}
+.form{
+  margin-top: 1.6rem !important;
+  border: solid rgba(0, 0, 0, 0.219) 0.1px;
+}
+
+/*---------------------------Landing-page-----------------------*/
+#fondo-landing{
+  background: url("./../img/landing.png") no-repeat center center fixed ;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+}
+
+.text-landing{
+  margin-top: 5rem !important;
+  padding: 1.5rem 6rem !important ;
+}
+
+.donarBtn-landing{
+  font-weight: bolder;
+  margin-top: 50%;
+  color: white;
+  background: #E65096;
+  width: 35rem;
+  height: 8rem;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 2.5rem;
+  padding: 1.5rem 6rem;
+  font-family: 'Raleway', sans-serif;
+  transition: .3s;
+}
+.donarBtn-landing:hover{
+  transition: .3s;
+  background: #fc8ec1 ;
+}
+
+.childContainer{
+  background:#ffd07e
+}
+/*---------------------------Responsive---------------------------*/
+@media (max-width:1340px){
+  .text-landing{
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    padding: 0rem !important ;
+  }
+  .donarBtn-landing{
+    /* margin-top: 5%;
+    background: #E65096; */
+    width: auto;
+    height: auto;
+    /* text-decoration: none;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: auto;
+    margin-bottom: -15rem; */
+  }
+}
+@media (max-width:992px){
+  .donarBtn-landing{
+    margin-top: 5%;
+  }
+  .container-btnLanding{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+@media (max-width:853px) {
+  body{
+  padding-top:70px;
+  }
+  
+  #header{
+    height:70px;
+  }
+  
+  .logo{
+    font-size: 25px;
+    line-height: 60px;
+    padding: 0 20px;
+    height: 55px;
+    width: auto;
+    padding-top:10px;
+  }
+  
+  /* cambiar left por right para aparicion de menu en navmenu y nav menu visible */
+  .nav-menu{
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #E65096;
+    position: fixed;
+    right: 0;
+    /* left: 0; */
+    top:70px;
+    width:100%;
+    padding: 20px 0;
+    height: calc(100% - 60px);
+    overflow: auto;
+    /* left:100%;
+    transition: left .5s; */
+    right:-100%;
+    transition: right .5s;
+  }
+  .nav{
+  line-height: 70px;
+  }
+  .nav-menu-link:hover,
+  .nav-menu-link-active{
+    background-color: none;
+    color:#83c5f7;
+    height: 100%;
+  }
+  .nav-toggle{
+    display: block;
+  }
+  .nav-menu-vissible{
+    /* left:0%; */
+    right:0%;
+    
+  }
+}
+
+@media (max-width:1027px) {
+  /* .containerTextIndex{
+    margin: 2rem 0rem;
+  } */
+
+  .container-general{
+    margin: 1rem 0rem;
+  }
+  .donarTitle{
+    font-size: 3rem;
+    padding-top: 0rem;
+  }
+  .donarButton{
+    width: 10rem;
+    height: 3.3rem;
+    border: none;
+    font-size: 2.2rem;
+    margin-top: 7rem;
+  }
+  .headerDonar{
+    margin-right: 0rem;
+  }
+  img{
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+  }
+  .m-contacto{
+    margin: 0 !important;
+  }
+}
+
+@media (max-width:768px) {
+  .imgCenter{
+    display: flex;
+    justify-content: center;
+  }
+  .donarTitle{
+      font-weight: bold;
+    /*margin-top: -2rem;*/
+    font-size: 2rem;
+    margin-top: -2rem;
+      margin-top:1rem;
+  }
+  .donarButton{
+    width: 8rem;
+    height: 2rem;
+    border: none;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+     margin-top:7rem;
+  }
+  .pFooter{
+    text-align: center;
+  }
+  .card-body{
+    margin: 0;
+  }
+}
+
+
+/*@media (max-width:360px) {*/
+  @media (max-width:450px) {
+    .banner{
+      height: 150px;
+    }
+    .titleHistoria{
+      font-size: 2rem;
+    }
+    .donarTitle{
+        font-weight: bold;
+      margin-top: -2rem;
+      font-size: 1.5rem;
+      margin-top:1rem;
+    }
+  .headerDonar{
+    margin-right: 0rem;
+  }
+  img{
+    width: 80%;
+  }  
+
+  .historia{
+    margin-top: 10rem ;
+  }
+  iframe{
+    width:100%;
+    height: auto;
+  }
+  .m-Responsive{
+    margin-top: 4rem !important;
+  }
+  .mt-responsive{
+    margin: 3rem 0 !important ;
+  }
+  .redes{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .p-logo{
+    padding-left: 0;
+    text-align: center;
+  }
+}
